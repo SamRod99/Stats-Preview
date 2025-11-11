@@ -7,11 +7,76 @@
    --White-mheading-stats: hsl(0, 0%, 100%);
    --White-paragraph: hsla(0, 0%, 100%, 0.75);
    --White-stat-headings: hsla(0, 0%, 100%, 0.6);
+   --fuente: 'Inter';
 }
-body{
+/*globales*/
+html{
     box-sizing: border-box;
     font-size: 62.5%;
 }
 *,*::before, *::after{
     box-sizing: inherit;
+}
+body{
+    background-color: var(--Navy-950);
+    font-family: var(--fuente);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    color: var(--White-mheading-stats);
+    font-size: 3.5rem;
+}
+p{
+    color: var(--White-paragraph);
+    margin: 0;
+}
+span{
+    color: var(--Purple-500);
+}
+img{
+    width: 100%;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-size: cover;
+}
+/*card*/
+/*@media (min-width: 768px) {
+    .card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--Blue-950);
+    border-radius: 1rem;
+    max-width: 90rem;
+}
+}*/
+.card__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
+}
+.card__descripcion{
+    line-height: 1.5;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+.card__numbers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.card__negrita{
+    font-weight: bold;
+    font-size: 2rem;  
+    margin-top: 5rem;           
+}
+.attribution{
+    color: var(--White-paragraph);
+    margin-top: 2rem;
 }

@@ -102,7 +102,7 @@ span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4rem;
+    padding: 7rem 4rem;
 }
 .card__descripcion{
     line-height: 1.5;
